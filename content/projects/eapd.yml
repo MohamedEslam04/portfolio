@@ -1,0 +1,6 @@
+title: EAPD - Egyptian Agency of Partnership for Development
+description: A comprehensive web platform for Egypt's development agency promoting international cooperation and sustainable development. Developed a professional institutional website featuring dynamic content sections, statistics display, news integration, and project categorization system. Implemented responsive design with smooth animations and modern UI components using custom component library. Integrated interactive features including partnership showcases, FAQ system, and data visualization components.
+image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+url: "https://newdev-fe-eapd.atwdemo.com/"
+tags: ["Nuxt 3", "Vue 3", "TypeScript", "@eslamdevui/ui", "Tailwind CSS", "Pinia", "i18n", "Chart.js", "Docker"]
+date: "2025"

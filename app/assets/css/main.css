@@ -1,16 +1,16 @@
 @import "tailwindcss";
-@import "@nuxt/ui-pro";
+@import "@eslamdevui/ui";
 
 @source "../../../content/**/*";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
-  --font-serif: 'Instrument Serif', serif;
+  --font-sans: "Public Sans", sans-serif;
+  --font-serif: "Instrument Serif", serif;
 }
 
 :root {
   --ui-container: var(--container-4xl);
-
+  --ui-header-height: --spacing(16);
 
   ::selection {
     color: #282a30;

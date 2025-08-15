@@ -1,0 +1,6 @@
+title: Expert System
+description: A multi-portal expert system for e-commerce, analytics, and POS solutions. Developed the Seller Portal (POS) and Analytics Portal using Vue.js. Implemented modular design patterns (HMVC, SOA) for scalability and maintainability. Integrated E-commerce APIs, Messaging Module, and Safe & HR Modules using DDD (Domain-Driven Design).
+image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+url: "https://expert-system.atwdemo.com/"
+tags: ["Vue 3", "Laravel 11", "Tailwind CSS", "TypeScript", "JavaScript", "WebSockets", "Livewire", "Docker"]
+date: "2025"
