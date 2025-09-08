@@ -1,7 +1,23 @@
 <script setup lang="ts">
+import * as locales from '@eslamdevui/ui/locale'
+
 const colorMode = useColorMode()
+const { locale, finalizePendingLocaleChange } = useI18n()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
+const lang = computed(() => locales[locale.value].code)
+const dir = computed(() => locales[locale.value].dir)
+
+const isLocaleChanging = ref(false)
+
+const onBeforeEnter = async () => {
+  // Set flag to indicate locale change is happening
+  isLocaleChanging.value = true
+  await finalizePendingLocaleChange()
+  // Add a small delay to ensure all reactive updates are complete
+  await nextTick()
+  isLocaleChanging.value = false
+}
 
 useHead({
   meta: [
@@ -13,52 +29,47 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang,
+    dir
   }
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
+  titleTemplate: '%s - Future Media',
   ogImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light',
   twitterImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light',
   twitterCard: 'summary_large_image'
 })
-
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation('blog')
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections('blog')
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
 </script>
 
 <template>
-  <UApp>
+  <NuxtRouteAnnouncer />
+  <NuxtLoadingIndicator color="var(--ui-primary)" />
+  <UApp
+    :dir="dir"
+    :locale="locales[locale]"
+  >
     <NuxtLayout>
       <UMain class="relative">
-        <NuxtPage />
+        <NuxtPage
+          :transition="{
+            name: 'my',
+            mode: 'out-in',
+            onBeforeEnter
+          }"
+        />
       </UMain>
     </NuxtLayout>
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        :navigation="navigation"
-        shortcut="meta_k"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
   </UApp>
 </template>
+
+<style>
+.my-enter-active,
+.my-leave-active {
+  transition: opacity 0.3s;
+}
+.my-enter,
+.my-leave-active {
+  opacity: 0;
+}
+</style>
