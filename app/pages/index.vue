@@ -1,34 +1,36 @@
 <script setup lang="ts">
+const { data: page } = await useAsyncData('index', () => {
+  return queryCollection('index').first()
+})
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
+
+useSeoMeta({
+  title: page.value?.seo.title || page.value?.title,
+  ogTitle: page.value?.seo.title || page.value?.title,
+  description: page.value?.seo.description || page.value?.description,
+  ogDescription: page.value?.seo.description || page.value?.description
+})
 </script>
 
 <template>
-  <UPage>
-    <LandingHero
-      :title="$t('landing.hero.title')"
-      :description="$t('landing.hero.description')"
-    />
-    <LandingClients />
-    <UPageCard
-      variant="soft"
-      title="27 Years of Experience"
-      description="For over 27 years, Sameh Aldahshan has built a solid track record in the media and advertising industry, leading successful strategies and campaigns that have shaped the communication landscape in Oman and beyond."
-      orientation="horizontal"
-      reverse
-      :ui="{ title: 'text-4xl', description: 'text-xl' }"
+  <UPage v-if="page">
+    <LandingHero :page />
+    <UPageSection
+      :ui="{
+        container: '!pt-0 lg:grid lg:grid-cols-2 lg:gap-8'
+      }"
     >
-      <NuxtImg
-        src="/home/man.png"
-        alt="Man"
-        format="webp"
-        quality="80"
-        class="object-contain w-full h-72"
-        loading="lazy"
-        decoding="async"
-        priority
-      />
-    </UPageCard>
-    <LandingServices />
-    <LandingPortfolio />
-    <BaseContact />
+      <LandingAbout :page />
+      <LandingWorkExperience :page />
+    </UPageSection>
+    <LandingBlog :page />
+    <LandingTestimonials :page />
+    <LandingFAQ :page />
   </UPage>
 </template>

@@ -1,21 +1,16 @@
 @import "tailwindcss";
-@import 'tailwind-scrollbar-hide/v4';
-@import "@eslamdevui/ui";
+@import "@nuxt/ui-pro";
 
 @source "../../../content/**/*";
 
 @theme static {
-  --color-primary-500: #105481;
-
-  --font-sans: "Public Sans", sans-serif;
-  --font-serif: "Instrument Serif", serif;
-  --container: 100%;
+  --font-sans: 'Public Sans', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
 }
 
 :root {
-  --ui-primary: var(--ui-color-primary-500);
-  --ui-container: var(--container);
-  --ui-header-height: --spacing(16);
+  --ui-container: var(--container-4xl);
+
 
   ::selection {
     color: #282a30;
