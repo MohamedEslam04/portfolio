@@ -1,0 +1,6 @@
+title: Future Media
+description: Future Media is a cutting-edge digital media company specializing in innovative content creation and distribution. Developed a dynamic and user-friendly website to showcase their services, portfolio, and client testimonials. Implemented advanced features such as video integration, interactive galleries, and a blog section to engage visitors and enhance user experience.
+image: /future-media.png
+url: "https://dev-future-media.atwdemo.com/services"
+tags: ["Nuxt", "Vue 3", "TypeScript", "@eslamdevui/ui", "Tailwind CSS", "Pinia", "i18n", "Docker"]
+date: "2025"
