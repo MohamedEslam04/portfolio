@@ -1,0 +1,6 @@
+title: "AI-Powered Penetration Tester"
+description: "Built an AI security dashboard with Nuxt 4, Vue 3, and Tailwind CSS. Implemented autonomous AI pentesting workflows with real-time scan updates via SSE. Developed an AI chat assistant for interactive security analysis and integrated enterprise-grade security, OAuth, and advanced vulnerability intelligence."
+image: "/ai-penetration-tester.webp"
+url: "https://dev-ai-pen.atwdemo.com"
+tags: ["Nuxt 4", "Vue 3", "TypeScript", "AI SDK", "@eslamdevui/ui", "PostgreSQL", "Drizzle ORM", "Redis", "Puppeteer", "Tailwind CSS v4"]
+date: "2025-10-01"

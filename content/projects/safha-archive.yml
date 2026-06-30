@@ -1,0 +1,6 @@
+title: "Safha Archive"
+description: "Developed Laravel backend API with Passport auth and built Next.js 16 frontend with React 19 and TypeScript. Integrated Typesense for system-wide search and Gemini for semantic embeddings. Managed state via TanStack Query and Zustand."
+image: "/safha-archive.webp"
+url: "https://safha-archive-test.velents.ai"
+tags: ["Next.js 16", "Laravel 13", "TypeScript", "Typesense", "Gemini", "TanStack Query", "Zustand", "shadcn/ui", "Tailwind CSS v4"]
+date: "2026-01-01"

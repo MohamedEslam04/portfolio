@@ -1,0 +1,6 @@
+title: "SAFHA – AI-Powered Document & Invoice Management"
+description: "Multi-tenant ERP system built with scalable Next.js frontend, multi-tenant architecture and RBAC. Developed admin dashboards and automated document processing workflows with AI extraction and validation. Created an advanced PDF review experience with highlighted OCR fields and integrated WhatsApp, Odoo, Qoyod, and Daftra APIs."
+image: "/safha-ai.webp"
+url: "https://platform.safha-ai.com"
+tags: ["Next.js 16", "Laravel 10", "TypeScript", "shadcn/ui", "Playwright", "JWT Auth", "React Hook Form", "Zod", "Tailwind CSS v4"]
+date: "2026-01-01"

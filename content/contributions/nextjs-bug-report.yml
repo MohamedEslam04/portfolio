@@ -1,0 +1,5 @@
+title: "vercel/next.js #93757"
+description: "Identified and reported a critical Next.js bug where a 0-byte file in .next/cache/images/ permanently poisons the disk-LRU singleton, breaking image optimization for the entire process lifetime. Provided root-cause analysis across 3 source files and 4 suggested fixes."
+url: "https://github.com/vercel/next.js/issues/93757"
+type: "Bug Report"
+date: 2025-12-01

@@ -11,7 +11,11 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
+  return queryCollection('projects').order('date', 'DESC').all()
+})
+
+const { data: contributions } = await useAsyncData('contributions', () => {
+  return queryCollection('contributions').order('date', 'DESC').all()
 })
 
 const { global } = useAppConfig()
@@ -157,6 +161,56 @@ useSeoMeta({
               Send Email
             </UButton>
           </div>
+        </div>
+      </div>
+    </UPageSection>
+
+    <!-- Open Source Contributions Section -->
+    <UPageSection :ui="{ container: '!pt-0' }">
+      <div class="border-t border-gray-200 dark:border-gray-800 pt-12">
+        <div class="mb-10">
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Open Source Contributions</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">NPM packages, bug reports, and other open-source contributions.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Motion v-for="(contrib, index) in contributions" :key="contrib.title"
+            :initial="{ opacity: 0, transform: 'translateY(20px)' }"
+            :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+            :transition="{ delay: 0.1 * index, duration: 0.5 }"
+            :in-view-options="{ once: true }"
+            class="group">
+            <NuxtLink :to="contrib.url" target="_blank" class="block h-full">
+              <div class="relative h-full overflow-hidden bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 p-6">
+                <!-- Badge + Year -->
+                <div class="flex items-center justify-between mb-4">
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-primary-50 dark:bg-primary-950 text-primary-600 dark:text-primary-400 border border-primary-100 dark:border-primary-900">
+                    {{ contrib.type }}
+                  </span>
+                  <span class="text-xs text-gray-400 dark:text-gray-500">{{ new Date(contrib.date).getFullYear() }}</span>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-base font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors font-mono">
+                  {{ contrib.title }}
+                </h3>
+
+                <!-- Description -->
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3 mb-4">
+                  {{ contrib.description }}
+                </p>
+
+                <!-- Link -->
+                <div class="flex items-center gap-1 text-xs text-primary font-medium mt-auto">
+                  View Contribution
+                  <UIcon name="i-lucide-arrow-right" class="size-3 transition-transform group-hover:translate-x-1" />
+                </div>
+
+                <!-- Hover overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl" />
+              </div>
+            </NuxtLink>
+          </Motion>
         </div>
       </div>
     </UPageSection>
