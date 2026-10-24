@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@eslamdevui/ui'
+import type { NavigationMenuItem } from '@nuxt/ui'
 
 defineProps<{
   links: NavigationMenuItem[]

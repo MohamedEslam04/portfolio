@@ -6,6 +6,5 @@
   "eslint.enable": true,
   "eslint.options": {
     "extensions": [".js", ".ts", ".vue"]
-  },
-  "nuxt.isNuxtApp": false
+  }
 }
