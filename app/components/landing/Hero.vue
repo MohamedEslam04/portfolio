@@ -12,7 +12,7 @@ defineProps<{
   <UPageHero
     :ui="{
       headline: 'flex items-center justify-center',
-      title: 'text-shadow-md max-w-lg mx-auto',
+      title: 'text-shadow-md mx-auto',
       links: 'mt-4 flex-col justify-center items-center'
     }"
   >
@@ -34,7 +34,7 @@ defineProps<{
         }"
       >
         <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
+          class="size-28 rounded-full ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
@@ -105,7 +105,7 @@ defineProps<{
           v-if="page.hero.links"
           class="flex items-center gap-2"
         >
-          <UButton v-bind="page.hero.links[0]" />
+          <!-- <UButton v-bind="page.hero.links[0]" /> -->
           <UButton
             :color="global.available ? 'success' : 'error'"
             variant="ghost"
@@ -156,7 +156,7 @@ defineProps<{
       </div>
     </template>
 
-    <UPageMarquee
+    <!-- <UPageMarquee
       pause-on-hover
       class="py-2 -mx-4 sm:-mx-6 lg:-mx-8 [--duration:40s]"
     >
@@ -186,6 +186,6 @@ defineProps<{
           v-bind="img"
         >
       </Motion>
-    </UPageMarquee>
+    </UPageMarquee> -->
   </UPageHero>
 </template>

@@ -1,6 +1,0 @@
-title: "AI Scraping Engine"
-description: "Schema-driven scraping service — turn any link into ready-to-import data. FastAPI async pipeline on Postgres with Taskiq workers, Playwright probes, HMAC-signed webhooks, and an internal React 19 dev console for reviewing jobs and approving proposed field mappings."
-image: "/projects/smart-scraper.webp"
-url: "https://ai-scraping-engine-test.velents.ai"
-tags: ["Python", "FastAPI", "PostgreSQL", "Playwright", "React"]
-date: 2026-10-01

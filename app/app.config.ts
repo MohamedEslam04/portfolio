@@ -1,52 +1,58 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      light: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'My profile picture'
+      dark: "https://i.postimg.cc/zG5DgGqC/profile-pic.png",
+      light: "https://i.postimg.cc/zG5DgGqC/profile-pic.png",
+      alt: "Mohamed Eslam - Frontend Developer",
     },
-    meetingLink: 'https://cal.com/',
-    email: 'ui-pro@nuxt.com',
-    available: true
+    meetingLink: "https://cal.com/mohamed-eslam-sf7gxj",
+    email: "mohamedeslam0419@gmail.com",
+    available: true,
   },
   ui: {
     colors: {
-      primary: 'blue',
-      neutral: 'neutral'
-    }
+      primary: "blue",
+      neutral: "neutral",
+    },
   },
   uiPro: {
     pageHero: {
       slots: {
-        container: 'py-18 sm:py-24 lg:py-32',
-        title: 'mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl',
-        description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
-      }
-    }
+        container: "py-18 sm:py-24 lg:py-32",
+        title: "mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl",
+        description:
+          "mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted",
+      },
+    },
   },
   footer: {
-    credits: `Copyright © ${new Date().getFullYear()}`,
+    credits: `Copyright © ${new Date().getFullYear()} Mohamed Eslam. All rights reserved.`,
     colorMode: false,
-    links: [{
-      'icon': 'i-simple-icons-nuxtdotjs',
-      'to': 'https://nuxt.com',
-      'target': '_blank',
-      'aria-label': 'Nuxt Website'
-    }, {
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://discord.com/invite/ps2h6QT',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on Discord'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://x.com/nuxt_js',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
-    }]
-  }
-})
+    links: [
+      {
+        icon: "i-simple-icons-github",
+        to: "https://github.com/MohamedEslam04",
+        target: "_blank",
+        "aria-label": "Mohamed Eslam on GitHub",
+      },
+      {
+        icon: "i-simple-icons-linkedin",
+        to: "https://www.linkedin.com/in/mohamed-eslam-41a3492a4/",
+        target: "_blank",
+        "aria-label": "Mohamed Eslam on LinkedIn",
+      },
+      {
+        icon: "i-simple-icons-npm",
+        to: "https://www.npmjs.com/~mohamedeslam0419",
+        target: "_blank",
+        "aria-label": "Mohamed Eslam on NPM",
+      },
+      {
+        icon: "clarity:email-solid",
+        to: "mailto:mohamedeslam0419@gmail.com",
+        target: "_blank",
+        "aria-label": "Email Mohamed Eslam",
+      },
+    ],
+  },
+});
