@@ -42,8 +42,19 @@ about:
 experience:
   title: Work Experience
   items:
+    - position: "Full-Stack Engineer"
+      date: "01/2026 - Present"
+      company:
+        name: Velents.ai
+        logo: "ic:twotone-building"
+        url: "https://velents.ai"
+      description: |
+        • Shipped full-stack features across Agent Hub (AI voice-agent platform), Safha Archive, Safha AI, and the feasibility-study system using Next.js 16 and Laravel 13.<br>
+        • Built standalone microservices: multi-tenant OCR extraction (Laravel, Horizon, signed webhooks), a PostGIS roads service, and a FastAPI AI scraping engine.<br>
+        • Built the Automation Hub Playwright test-orchestration platform and company-wide E2E suites for Agent Hub and the ATS.<br>
+        • Contributed to GitOps infrastructure (ArgoCD, Helm) including the AWS EKS → Azure AKS migration.
     - position: "Frontend Developer"
-      date: "07/2024 - Present"
+      date: "07/2024 - 01/2026"
       company:
         name: ATW
         logo: "ic:twotone-house"

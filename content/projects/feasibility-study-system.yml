@@ -1,0 +1,6 @@
+title: "Feasibility Study System"
+description: "Arabic-first (RTL) villa feasibility web app for a Saudi real-estate organization. Staff capture a land plot's location, draw and measure its boundary on a map, and review a ranked summary of nearby landmarks and feasibility signals. Laravel 13 API + Next.js 16 App Router frontend."
+image: "/feasibility-study.webp"
+url: "https://feasibility-study-test.velents.ai"
+tags: ["Next.js 16", "Laravel 13", "PostGIS", "TypeScript", "RTL"]
+date: "2026-09-15"
