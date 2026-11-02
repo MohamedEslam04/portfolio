@@ -45,15 +45,24 @@ export default defineContentConfig({
           images: z.array(createImageSchema())
         }),
         about: createBaseSchema(),
+        skills: createBaseSchema().extend({
+          groups: z.array(z.object({
+            title: z.string(),
+            icon: z.string().editor({ input: 'icon' }),
+            items: z.array(z.string())
+          }))
+        }),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
             date: z.date(),
             position: z.string(),
+            location: z.string().optional(),
+            highlights: z.array(z.string()).optional(),
             company: z.object({
               name: z.string(),
               url: z.string(),
               logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
+              color: z.string().optional()
             })
           }))
         }),

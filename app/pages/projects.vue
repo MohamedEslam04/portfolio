@@ -170,7 +170,7 @@ useSeoMeta({
       <div class="border-t border-gray-200 dark:border-gray-800 pt-12">
         <div class="mb-10">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Open Source Contributions</h2>
-          <p class="text-gray-500 dark:text-gray-400 text-sm">NPM packages, bug reports, and other open-source contributions.</p>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">NPM packages, bug reports, security advisories, and other open-source contributions.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">

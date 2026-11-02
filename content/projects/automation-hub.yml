@@ -2,5 +2,5 @@ title: "Automation Hub"
 description: "Multi-repo Playwright test orchestration platform. Register test repositories, queue and execute runs on dedicated Playwright runners, stream logs and results back to the team, and surface analytics and tagging across the org."
 image: "/automation-hub.webp"
 url: "https://automation-hub-test.velents.ai"
-tags: ["NestJS", "Next.js 16", "Prisma", "Playwright", "PostgreSQL"]
-date: "2026-09-10"
+tags: ["NestJS", "Next.js 16", "React 19", "Prisma", "PostgreSQL", "BullMQ", "Redis", "Playwright", "Vitest", "MCP"]
+date: 2026-06-01

@@ -3,7 +3,7 @@ export default defineAppConfig({
     picture: {
       dark: "https://i.postimg.cc/zG5DgGqC/profile-pic.png",
       light: "https://i.postimg.cc/zG5DgGqC/profile-pic.png",
-      alt: "Mohamed Eslam - Frontend Developer",
+      alt: "Mohamed Eslam - Full-Stack Software Engineer",
     },
     meetingLink: "https://cal.com/mohamed-eslam-sf7gxj",
     email: "mohamedeslam0419@gmail.com",

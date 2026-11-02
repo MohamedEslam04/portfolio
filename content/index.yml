@@ -1,117 +1,141 @@
 seo:
-  title: "Mohamed Eslam - Frontend Developer"
-  description: "Portfolio of Mohamed Eslam, a Frontend Developer based in Cairo, Egypt. Specialized in Nuxt.js, Vue, React, and building high-performance, scalable web applications and npm packages."
-title: "Hey, I'm Mohamed Eslam - Frontend Developer"
-description: "I build dynamic, responsive web applications and reusable UI libraries with Nuxt.js, Vue, and React. Passionate about performance, scalability, and delivering seamless user experiences."
+  title: "Full-Stack Software Engineer"
+  description: "Portfolio of Mohamed Eslam, a Full-Stack Software Engineer based in Cairo, Egypt. I build production web applications, ERPs, and microservices with Next.js, React, Nuxt, Laravel, and FastAPI."
+title: "Hey, I'm Mohamed Eslam - Full-Stack Software Engineer"
+description: "I build production web applications, dashboards, and microservices — from Next.js and Nuxt frontends to Laravel APIs, queues, and signed webhooks. Based in Cairo, working remotely with teams across the Gulf."
 hero:
   links:
-    - label: "View My Portfolio"
-      to: "https://github.com/eslamdevui"
+    - label: "View Projects"
+      to: "/projects"
       color: "neutral"
     - label: "LinkedIn"
-      to: "https://www.linkedin.com/in/mohamedeslam0419/"
+      to: "https://www.linkedin.com/in/mohamed-eslam-41a3492a4/"
       color: "primary"
     - label: "GitHub"
-      to: "https://github.com/eslamdevui"
-      color: "black"
-    - label: "NPM Profile"
-      to: "https://www.npmjs.com/~eslamdevui"
-      color: "amber"
+      to: "https://github.com/MohamedEslam04"
+      color: "neutral"
   images:
-    - src: https://picsum.photos/468/468?random=1
-      alt: Mohamed Eslam Profile 1
-    - src: https://picsum.photos/468/468?random=2
-      alt: Mohamed Eslam Profile 2
-    - src: https://picsum.photos/468/468?random=3
-      alt: Mohamed Eslam Profile 3
-    - src: https://picsum.photos/468/468?random=4
-      alt: Mohamed Eslam Profile 4
-    - src: https://picsum.photos/468/468?random=5
-      alt: Mohamed Eslam Profile 5
-    - src: https://picsum.photos/468/468?random=6
-      alt: Mohamed Eslam Profile 6
-    - src: https://picsum.photos/468/468?random=7
-      alt: Mohamed Eslam Profile 7
-    - src: https://picsum.photos/468/468?random=8
-      alt: Mohamed Eslam Profile 8
+    - src: /safha-ai.webp
+      alt: SAFHA AI document management platform
+    - src: /automation-hub.webp
+      alt: Automation Hub test orchestration platform
+    - src: /feasibility-study.webp
+      alt: Feasibility Study System map interface
+    - src: /smart-scraper.webp
+      alt: AI Scraping Engine dashboard
+    - src: /eapd.webp
+      alt: EAPD institutional website
+    - src: /ai-penetration-tester.webp
+      alt: AI-Powered Penetration Tester dashboard
+    - src: /safha-archive.webp
+      alt: Safha Archive search platform
+    - src: /expert-system.webp
+      alt: Expert System analytics portal
 about:
   title: "About Me"
-  description: |
-    I am a Frontend Developer based in Cairo, Egypt, with a B.S. in Computers and Artificial Intelligence from Cairo University. I specialize in building high-performance, scalable web applications and reusable npm packages using Nuxt.js, Vue, React, and TypeScript. My expertise includes responsive design, UI component libraries, and optimizing user experience. I thrive in collaborative teams, adapt quickly to new challenges, and am passionate about open-source contributions.
-    Key Skills: Nuxt 3, Vue, React, NPM Package Development, Angular, HTML, SCSS, CSS, Tailwind, HeadlessUI, NuxtUI, Bootstrap, Responsive Design, RESTful APIs, tree-shaking, JavaScript, TypeScript, Docker, GitHub, CI/CD, Teamwork, Problem Solving.
+  description: >-
+    I'm a Full-Stack Software Engineer with a strong frontend background, based in Cairo, Egypt.
+    I ship production features across AI voice agents, document-management ERPs, and geospatial tools
+    using Next.js, React, Vue/Nuxt, Laravel, NestJS, and FastAPI. I care about clean architecture,
+    performance, and developer experience — and I use AI-assisted workflows to move from idea to
+    shipped feature faster.
+skills:
+  title: "Skills & Tools"
+  description: "The stack I use to design, build, test, and ship full-stack products."
+  groups:
+    - title: Frontend
+      icon: i-lucide-monitor-smartphone
+      items:
+        - Vue 3
+        - Nuxt 4
+        - React 19
+        - Next.js 16
+        - TypeScript
+        - JavaScript
+        - Tailwind CSS v4
+        - HTML / CSS / Sass
+        - Bootstrap 5
+        - shadcn/ui
+    - title: Backend & Data
+      icon: i-lucide-server
+      items:
+        - Laravel 13
+        - PHP 8.3
+        - FastAPI
+        - Python
+        - NestJS
+        - Prisma
+        - Drizzle ORM
+        - PostgreSQL
+        - Redis
+        - PostGIS
+        - Typesense
+    - title: State & APIs
+      icon: i-lucide-workflow
+      items:
+        - Pinia
+        - Zustand
+        - TanStack Query
+        - REST APIs
+        - Swagger
+        - Zod
+        - React Hook Form
+    - title: DevOps & Testing
+      icon: i-lucide-container
+      items:
+        - Docker
+        - CI/CD
+        - GitOps (ArgoCD / Helm)
+        - Playwright
+        - Vitest
+        - Puppeteer
+    - title: AI & Tooling
+      icon: i-lucide-sparkles
+      items:
+        - AI SDK
+        - Gemini
+        - Claude Code
+        - MCP
+        - NPM Package Development
 experience:
   title: Work Experience
   items:
-    - position: "Full-Stack Engineer"
+    - position: "Full-Stack Engineer at"
       date: "01/2026 - Present"
+      location: "Riyadh, Saudi Arabia · Remote"
       company:
         name: Velents.ai
-        logo: "ic:twotone-building"
+        logo: "i-lucide-bot"
         url: "https://velents.ai"
-      description: |
-        • Shipped full-stack features across Agent Hub (AI voice-agent platform), Safha Archive, Safha AI, and the feasibility-study system using Next.js 16 and Laravel 13.<br>
-        • Built standalone microservices: multi-tenant OCR extraction (Laravel, Horizon, signed webhooks), a PostGIS roads service, and a FastAPI AI scraping engine.<br>
-        • Built the Automation Hub Playwright test-orchestration platform and company-wide E2E suites for Agent Hub and the ATS.<br>
-        • Contributed to GitOps infrastructure (ArgoCD, Helm) including the AWS EKS → Azure AKS migration.
-    - position: "Frontend Developer"
+        color: "#0EA5E9"
+      highlights:
+        - "Shipped full-stack features across Agent Hub (AI voice-agent platform), Safha Archive, Safha AI, and the feasibility-study system using Next.js 16 and Laravel 13."
+        - "Built standalone microservices: multi-tenant OCR extraction (Laravel, Horizon, signed webhooks), a PostGIS roads service, and an AI scraping engine on FastAPI."
+        - "Built the Automation Hub Playwright test-orchestration platform and company-wide E2E suites for Agent Hub and the ATS."
+        - "Contributed to GitOps infrastructure (ArgoCD, Helm), including the AWS EKS → Azure AKS migration and an S3 → Azure Blob sync tool."
+        - "Authored the company's internal Claude Code skills catalog to speed up delivery."
+    - position: "Front-End Engineer at"
+      date: "04/2025 - Present"
+      location: "Riyadh, Saudi Arabia · Part-time, Freelance"
+      company:
+        name: Amar Benaa
+        logo: "i-lucide-hard-hat"
+        url: "https://www.amar-benaa.com"
+        color: "#F59E0B"
+      highlights:
+        - "Delivering ERP frontend solutions for digital transformation."
+    - position: "Software Engineer at"
       date: "07/2024 - 01/2026"
+      location: "El-Mohandsin, Cairo, Egypt · On-site"
       company:
         name: ATW
-        logo: "ic:twotone-house"
+        logo: "i-lucide-house"
         url: "https://atw.ltd/"
-        # color: "info"
-      description: |
-        • Built dynamic, mobile-first UIs using Nuxt.js, Vue 3, and Tailwind CSS.<br>
-        • Enhanced application speed and ensured seamless cross-browser compatibility.<br>
-        • Collaborated closely with designers and backend teams to deliver user-friendly features.
-projects:
-  title: Projects
-  items:
-    - name: "EAPD - Egyptian Agency of Partnership for Development"
-      date: "07/2025 - Present"
-      url: ""
-      description: |
-        Developed a comprehensive web platform for Egypt's development agency, featuring dynamic content, statistics, news, and project categorization. Implemented responsive design, smooth animations, and modern UI components using a custom component library.
-      technologies: "Nuxt 3, Vue, TypeScript, @eslamdevui/ui, Tailwind CSS, Pinia, i18n, Nuxt Proxy, vue3-google-map, Chart.js, Docker"
-    - name: "Expert System"
-      date: "01/2025 - Present"
-      url: ""
-      description: |
-        Built multi-portal expert system for e-commerce, analytics, and POS. Developed Seller Portal (POS) and Analytics Portal using Vue.js. Applied modular design patterns (HMVC, SOA) and integrated E-commerce APIs, Messaging, and HR modules.
-      technologies: "Vue 3, Laravel 11, Tailwind CSS, TypeScript, JavaScript, Livewire, Docker"
-    - name: "Shomo'a Dubai"
-      date: "12/2024 - 07/2025"
-      url: ""
-      description: |
-        Developed a modern e-commerce platform for lighting products with advanced filtering, blog integration, and a responsive, visually appealing design.
-      technologies: "Nuxt 3, Vue 3, Pinia, Tailwind CSS, TypeScript, Axios, i18n, Sitemap, Prettier, PostCSS, Docker"
-education:
-  title: Education
-  items:
-    - degree: "B.S. Computers and Artificial Intelligence"
-      date: "09/2019 - 09/2023"
-      institution: "Cairo University"
-      location: "Cairo, Egypt"
-languages:
-  - name: "Arabic"
-    level: "Native"
-  - name: "English"
-    level: "Beginner"
-open_source:
-  title: "Open-Source Contributions"
-  items:
-    - name: "@eslamdevui/ui"
-      type: "NPM Package"
-      description: "A fully accessible, performant UI component library for Vue 3 & Nuxt 3 based on Tailwind CSS & Tailwind Variants. Inspired by Nuxt UI v3."
-      url: "https://www.npmjs.com/package/@eslamdevui/ui"
-    - name: "@eslamdevui/vue"
-      type: "NPM Package"
-      description: "A set of fully accessible, unstyled UI components for Vue 3 and Tailwind CSS."
-      url: "https://www.npmjs.com/package/@eslamdevui/vue"
-    - name: "vue-directives-kit"
-      type: "NPM Package"
-      description: "A Vue.js directives utility package to enhance development efficiency."
-      url: "https://www.npmjs.com/package/vue-directives-kit"
+        color: "#10B981"
+      highlights:
+        - "Built dynamic, mobile-first interfaces with Nuxt.js, Vue 3, and Tailwind CSS."
+        - "Improved application performance and ensured cross-browser compatibility."
+        - "Collaborated with designers and backend engineers to ship scalable, user-friendly features."
 testimonials:
   - quote: "Mohamed's expertise in Nuxt.js and Vue helped us deliver a high-performance, scalable platform. His attention to detail and collaborative approach made a significant impact on our project."
     author:
@@ -136,7 +160,7 @@ testimonials:
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 blog:
   title: "Latest Articles"
-  description: "Insights on frontend development, Nuxt.js, Vue, and open-source contributions."
+  description: "Notes on frontend architecture, full-stack delivery, security, and open-source work."
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my skills, services, and experience.
@@ -145,26 +169,29 @@ faq:
       questions:
         - label: What technologies do you specialize in?
           content: |
-            I specialize in Nuxt.js, Vue, React, TypeScript, Tailwind CSS, and building reusable npm packages. I also have experience with Angular, RESTful APIs, Docker, and CI/CD.
+            I work across the stack: Next.js, React, Vue 3 and Nuxt on the frontend; Laravel, NestJS, FastAPI and Node.js on the backend; PostgreSQL, Redis, PostGIS and Typesense for data; and Docker, CI/CD, ArgoCD/Helm and Playwright for delivery. I also build and publish reusable npm packages.
         - label: What services do you offer?
           content: |
-            I offer frontend development for web applications, UI component library development, performance optimization, and open-source consulting. I can help teams build scalable, maintainable, and high-quality codebases.
+            I build production web applications and internal platforms end to end — frontend architecture and design systems, REST APIs, background jobs and queues, webhooks, and automated test suites. I can join an existing product team or own a feature from schema to UI.
         - label: Do you contribute to open-source?
           content: |
-            Yes! I actively maintain and publish npm packages, including @eslamdevui/ui, @eslamdevui/vue, and vue-directives-kit.
+            Yes. I maintain and publish npm packages — @eslamdevui/ui, @eslamdevui/vue and vue-directives-kit — and I have reported bugs upstream, including a Next.js image-optimization cache issue with a full root-cause analysis.
     - title: Projects & Collaboration
       questions:
         - label: Can you work with remote teams?
           content: |
-            Absolutely. I have experience collaborating with distributed teams using GitHub, CI/CD, and modern project management tools.
+            Absolutely. I currently work remotely with a team in Riyadh while based in Cairo, using GitHub, CI/CD, and async communication. I'm comfortable across time zones and distributed code review.
         - label: How do you approach new projects?
           content: |
-            I start by understanding project requirements, then design scalable architecture and reusable components. I focus on performance, accessibility, and maintainability from the start.
+            I start by understanding the requirements and the data model, then design module boundaries and typed contracts before building. I focus on performance, accessibility, and maintainability from the start, and I ship in small, reviewable increments with tests.
+        - label: How do you use AI in your workflow?
+          content: |
+            I use AI-assisted development (Claude Code) to accelerate scaffolding, refactors, and backend implementation, backed by code review and tests. At Velents I authored the internal Claude Code skills catalog that the team uses day to day.
     - title: About Me
       questions:
         - label: What motivates you as a developer?
           content: |
-            I enjoy solving complex problems, learning new technologies, and contributing to the open-source community. Building tools that help other developers is especially rewarding.
+            I enjoy solving complex problems across the stack, learning new technologies, and contributing to the open-source community. Building tools that other developers rely on is especially rewarding.
         - label: What are your interests outside of coding?
           content: |
-            Outside of development, I enjoy reading, exploring new technologies, and participating in tech meetups in Cairo.
+            Outside of development, I enjoy UI/UX design, cybersecurity, exploring new technologies, and participating in tech meetups in Cairo.

@@ -1,36 +1,44 @@
 title: About Me
-description: Learn more about my journey as a Frontend Developer specializing in modern JavaScript frameworks, and scalable web solutions.
+description: Full-Stack Software Engineer in Cairo, Egypt — building production web apps, ERP platforms, and microservices end to end.
 content: |
-  Hi, I'm **Mohamed Eslam**, a Frontend Developer based in Cairo, Egypt. I specialize in building dynamic, responsive user interfaces and developing reusable npm packages to enhance code modularity and scalability in frontend projects.
+  Hi, I'm **Mohamed Eslam**, a Full-Stack Software Engineer based in Cairo, Egypt. I started on the frontend and now ship end to end: React/Next.js and Vue/Nuxt interfaces, Laravel and FastAPI backends, background queues, signed webhooks, and the infrastructure that runs them.
 
-  My journey began at **Cairo University**, where I earned a B.S. in Computers and Artificial Intelligence. There, I developed a strong foundation in computer science and artificial intelligence principles, which I now apply to real-world web development challenges.
+  I work at **Velents.ai**, where I build AI voice-agent and document products — Agent Hub, Safha Archive, Safha AI, and a villa feasibility system — plus standalone microservices: a multi-tenant OCR extraction service, a PostGIS roads service, and an AI scraping engine. I also build the Automation Hub Playwright test-orchestration platform and the company-wide E2E suites.
 
-  ### My Approach
+  ### How I Work
 
-  My philosophy centers on **problem-solving**, **collaboration**, and **continuous learning**. I believe that great digital products are created by combining technical excellence with a deep understanding of user needs. I focus on:
-  - Building accessible, performant, and maintainable UI components (Vue 3, Nuxt 3, Tailwind CSS)
-  - Ensuring optimized performance and seamless user experience
-  - Collaborating closely with designers and backend teams to deliver user-friendly features
+  - Ship production features end to end, from database schema and API contracts to the UI.
+  - Keep clear module boundaries, typed data, and automated tests.
+  - Use AI-assisted development (Claude Code) to shorten the path from idea to production — without skipping review.
+  - Care about performance, accessibility, and the developer experience of the next person reading the code.
 
-  ### Skills & Tools
+  ### Experience
 
-  - **Frontend:** Nuxt 3, Vue 3, React, Tailwind CSS, SCSS, HTML, JavaScript, TypeScript
-  - **UI Libraries:** Nuxt UI, HeadlessUI, Bootstrap
-  - **DevOps:** Docker, GitHub, CI/CD
-  - **Other:** RESTful APIs, Responsive Design, NPM Package Development
+  - **Full-Stack Engineer · Velents.ai** _(01/2026 – Present)_ — Agent Hub, Safha Archive, Safha AI, feasibility-study system, OCR/geospatial/scraping microservices, Automation Hub, GitOps.
+  - **Front-End Engineer · Amar Benaa** _(04/2025 – Present, part-time)_ — ERP frontend solutions for digital transformation.
+  - **Software Engineer · ATW** _(07/2024 – 01/2026)_ — mobile-first Nuxt.js/Vue 3 interfaces, performance and cross-browser work.
 
-  ### What Drives Me
+  ### Education
 
-  I am passionate about translating complex ideas into simple, elegant solutions. I enjoy the challenge of building scalable systems and seeing my work make a tangible impact for users and teams. I am always eager to learn new technologies and contribute to open source.
+  **B.S. Computers and Artificial Intelligence** — Cairo University, Cairo, Egypt _(09/2019 – 09/2023)_
+
+  ### Languages
+
+  Arabic (Native) · English (Intermediate)
+
+  ### Open Source
+
+  - **@eslamdevui/ui** — accessible, performant UI component library for Vue & Nuxt built on Tailwind CSS.
+  - **@eslamdevui/vue** — unstyled, accessible Vue 3 components for Tailwind CSS.
+  - **vue-directives-kit** — reusable Vue directives that remove repetitive DOM code.
+  - **vercel/next.js #93757** — reported an image-optimization cache bug with root-cause analysis across three source files and four suggested fixes.
 
   ### Beyond Code
 
-  Outside of coding, I enjoy exploring technology trends, UI/UX design, and contributing to open-source projects. I value teamwork, adaptability, and continuous improvement.
-
-  Thanks for visiting! Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate.
+  Outside of work I explore UI/UX design, cybersecurity, and AI-assisted development, and I contribute to open source. I value teamwork, adaptability, and continuous improvement. Thanks for visiting — browse my [projects](/projects), [download my CV (PDF)](/MohamedEslamCV.pdf), or [get in touch](/#contact) if you'd like to collaborate.
 
 images:
-  - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwqy-9YhzfHTrk8iWJL0BXnsSA1QtsXreCA&s
-    alt: Software development passion
-  - src: https://hips.hearstapps.com/hmg-prod/images/ride-mountain-bikes-raab-660c3f3e9a17c.jpg?resize=800:*
-    alt: Mountain biking enthusiast
+  - src: /safha-ai.webp
+    alt: SAFHA AI document management platform
+  - src: /eapd.webp
+    alt: EAPD institutional website

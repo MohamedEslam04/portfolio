@@ -18,7 +18,7 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
+  titleTemplate: '%s - Mohamed Eslam',
   ogImage: '/og-image.png',
   twitterImage: '/og-image.png',
   twitterCard: 'summary_large_image'
